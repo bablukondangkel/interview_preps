@@ -1,0 +1,52 @@
+1. Introduce Yourself And project.
+2. ⁠which version of java you are  using ?
+3. ⁠predicate interface?
+4. ⁠problem related to predicate. Give the employee name whose salary is greater than 10k?
+pulic class Employee{
+    public int id;
+	public String name;
+	public int salary;
+	
+	public Employee (int id, String name, Int salary){
+	
+	this.id= id;
+	this.name = name;
+	this.salary = salary;
+    }
+	
+	public int getId(){
+	return id;
+	}
+	public void setId(int id){
+	this.id= id;
+	}
+	public String getName(){
+	return name;
+	}
+	public void setName(String name){
+	this.name = name;
+	}
+	public int getSalary(){
+	return salary;
+	}
+	public void setSalary(int salary){
+	this.salary = salary;
+	}
+	Public static void main(String [] args){
+	Employee e = new Employee (101,"Subho",30000);
+	Employee e1 = new Employee (10,"Stark",20000);
+	Employee e2 = new Employee (101,"Stark",20000);
+	
+	List <Employee> empList = new ArrayList<>();
+	List <Employee>empList.stream().filter(e -> e.getSalary()>=10000).map(e -> e.getName()).collect(Collectors.toList);
+	Syetem.out.println(empList);
+
+5. ⁠problem related string?
+String s1 = null;
+	
+	System.out.println(s1.valueOf("ram"));
+
+Output: Ram(It will wrap the value)
+6. ⁠bean life cycle?
+7. ⁠prototype bean ?
+8. ⁠composite key in Jpa?
